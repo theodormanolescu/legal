@@ -1,0 +1,15 @@
+[submodule "roles/ansible-role-php"]
+	path = roles/ansible-role-php
+	url = git@github.com:geerlingguy/ansible-role-php.git
+[submodule "roles/ansible-role-redis"]
+	path = roles/ansible-role-redis
+	url = git@github.com:geerlingguy/ansible-role-redis.git
+[submodule "roles/ansible-role-elasticsearch"]
+	path = roles/ansible-role-elasticsearch
+	url = git@github.com:geerlingguy/ansible-role-elasticsearch.git
+[submodule "roles/ansible-role-nginx"]
+	path = roles/ansible-role-nginx
+	url = git@github.com:geerlingguy/ansible-role-nginx.git
+[submodule "roles/ansible-role-haproxy"]
+	path = roles/ansible-role-haproxy
+	url = git@github.com:geerlingguy/ansible-role-haproxy.git

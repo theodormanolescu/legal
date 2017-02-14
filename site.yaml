@@ -1,0 +1,25 @@
+---
+- hosts: webservers
+  remote_user: root
+  # roles:
+  # - { role: ansible-role-php }
+  # - { role: ansible-role-nginx }  
+  tasks:
+  - name: Ensure pip installed
+    apt: name={{item}} state=installed
+    with_items:
+      - python-pip
+      - python-dev 
+      - build-essential 
+  - name: Install docker-py
+    pip:
+      name: docker-py
+
+  - name: Ensure docker service started
+    service:
+      name: docker
+      state: started
+
+  - name: Container present
+    docker_container:
+      name: test
